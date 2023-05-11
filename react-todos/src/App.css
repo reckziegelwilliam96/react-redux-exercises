@@ -1,3 +1,5 @@
+/* App.css */
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
@@ -6,31 +8,31 @@ body {
   padding: 0;
 }
 
-h1 {
+.App {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 20px;
+  padding: 20px;
 }
 
-form {
+.TodoForm {
+  margin-bottom: 20px;
+}
+
+.TodoForm form {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin: 20px;
 }
 
-form input[type="text"] {
-  margin: 10px;
+.TodoForm form input {
+  margin-right: 10px;
   padding: 5px;
-  width: 300px;
+  width: 200px;
 }
 
-form button {
+.TodoForm form button {
   padding: 5px 10px;
-  margin: 10px;
   background-color: #007BFF;
   color: white;
   border: none;
@@ -38,34 +40,32 @@ form button {
   cursor: pointer;
 }
 
-form button:hover {
+.TodoForm form button:hover {
   background-color: #0056b3;
 }
 
-.meme {
+.TodoList {
+  width: 100%;
+  max-width: 400px;
+}
+
+.TodoList ul {
+  list-style: none;
+  padding: 0;
+}
+
+.TodoList li {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin: 20px;
+  justify-content: space-between;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: white;
+  margin-bottom: 10px;
 }
 
-.meme img {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-}
-
-.meme h2 {
-  margin: 10px;
-  font-size: 1.5em;
-}
-
-.meme button {
+.TodoList li button {
   padding: 5px 10px;
   background-color: #dc3545;
   color: white;
@@ -74,6 +74,6 @@ form button:hover {
   cursor: pointer;
 }
 
-.meme button:hover {
+.TodoList li button:hover {
   background-color: #c82333;
 }

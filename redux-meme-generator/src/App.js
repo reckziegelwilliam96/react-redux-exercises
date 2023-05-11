@@ -5,6 +5,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      <h1>Redux Meme Generator</h1>
       <div className="MemeForm">
         <MemeForm />
       </div>
